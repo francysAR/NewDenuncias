@@ -1,34 +1,34 @@
-<!-- Nombre Field -->
+<!-- Nombres y Apellidos campos -->
 <div class="form-group col-sm-6">
-    {!! Form::label('nombre', 'Nombre:') !!}
+    {!! Form::label('nombre', 'Nombres y Apellidos:') !!}
     {!! Form::text('nombre', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Cedula Field -->
+<!-- Cédula campos -->
 <div class="form-group col-sm-6">
-    {!! Form::label('cedula', 'Cedula:') !!}
+    {!! Form::label('cedula', ' N° Cédula:') !!}
     {!! Form::text('cedula', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Telefono Field -->
+<!-- Teléfono campos -->
 <div class="form-group col-sm-6">
-    {!! Form::label('telefono', 'Telefono:') !!}
+    {!! Form::label('telefono', 'Teléfono:') !!}
     {!! Form::text('telefono', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Encargado Field -->
+<!-- Encargado campos -->
 <div class="form-group col-sm-6">
     {!! Form::label('encargado', 'Encargado:') !!}
     {!! Form::text('encargado', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Descripcion Field -->
+<!-- Descripción campos -->
 <div class="form-group col-sm-6">
-    {!! Form::label('descripcion', 'Descripcion:') !!}
+    {!! Form::label('descripcion', 'Descripción:') !!}
     {!! Form::text('descripcion', null, ['class' => 'form-control']) !!}
 </div>
 
-<!-- Submit Field -->
+<!-- Enviar campos -->
 <div class="form-group col-sm-12">
     {!! Form::submit('Guardar', ['class' => 'btn btn-primary']) !!}
     <a href="{{ route('soportes.index') }}" class="btn btn-secondary">Cancelar</a>

@@ -3,7 +3,7 @@
 @section('content')
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
-         <a href="{!! route('asignacions.index') !!}">Asignacion</a>
+         <a href="{!! route('asignacions.index') !!}">Asignación</a>
       </li>
       <li class="breadcrumb-item active">Crear</li>
     </ol>
@@ -15,7 +15,7 @@
                         <div class="card">
                             <div class="card-header">
                                 <i class="fa fa-plus-square-o fa-lg"></i>
-                                <strong>Crear Asignacion</strong>
+                                <strong>Crear Asignación</strong>
                             </div>
                             <div class="card-body">
                                 {!! Form::open(['route' => 'asignacions.store']) !!}

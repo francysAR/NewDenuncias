@@ -1,41 +1,42 @@
-<!-- Nombre Field -->
+<!-- Nombres y Apellidos Campos -->
 <div class="form-group">
-    {!! Form::label('nombre_apellido', 'Nombre:') !!}
+    {!! Form::label('nombre_apellido', 'Nombres y Apellidos:') !!}
     <p>{{ $denuncia->nombre_apellido }}</p>
 </div>
 
-<!-- Telefono Field -->
+<!-- Teléfono Campos -->
 <div class="form-group">
-    {!! Form::label('telefono', 'Telefono:') !!}
+    {!! Form::label('telefono', 'Teléfono:') !!}
     <p>{{ $denuncia->telefono }}</p>
 </div>
 
+<!-- Barrio Campos -->
 <div class="form-group">
     {!! Form::label('barrio', 'Barrio:') !!}
     <p>{{ $denuncia->barrio }}</p>
 </div>
 
-<!-- Asunto Field -->
+<!-- Asunto Campos -->
 <div class="form-group">
     {!! Form::label('asunto', 'Asunto:') !!}
     <p>{{ $denuncia->asunto }}</p>
 </div>
 
-<!-- Descripcion Field -->
+<!-- Descripción Campos -->
 <div class="form-group">
-    {!! Form::label('descripcion', 'Descripcion:') !!}
+    {!! Form::label('descripcion', 'Descripción:') !!}
     <p>{{ $denuncia->descripcion }}</p>
 </div>
 
-<!-- Created At Field -->
+<!-- Creados el Campos -->
 <div class="form-group">
-    {!! Form::label('created_at', 'Created At:') !!}
+    {!! Form::label('created_at', 'Creado el:') !!}
     <p>{{ $denuncia->created_at }}</p>
 </div>
 
-<!-- Updated At Field -->
+<!-- Actualizados el Campos -->
 <div class="form-group">
-    {!! Form::label('updated_at', 'Updated At:') !!}
+    {!! Form::label('updated_at', 'Actualizado el:') !!}
     <p>{{ $denuncia->updated_at }}</p>
 </div>
 

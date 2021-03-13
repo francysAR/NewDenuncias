@@ -15,7 +15,7 @@
                          <div class="card">
                              <div class="card-header">
                                  <strong>Detalles</strong>
-                                  <a href="{{ route('soportes.index') }}" class="btn btn-light">Atras</a>
+                                  <a href="{{ route('soportes.index') }}" class="btn btn-light">Atrás</a>
                              </div>
                              <div class="card-body">
                                  @include('soportes.show_fields')

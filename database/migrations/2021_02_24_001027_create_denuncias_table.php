@@ -16,7 +16,7 @@ class CreateDenunciasTable extends Migration
     {
         Schema::create('denuncias', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('nombre');
+            $table->text('nombre_apellido');
             $table->text('telefono');
             $table->text('barrio');
             $table->text('asunto');

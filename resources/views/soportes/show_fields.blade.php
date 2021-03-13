@@ -1,42 +1,42 @@
-<!-- Nombre Field -->
+<!-- Nombre campos-->
 <div class="form-group">
-    {!! Form::label('nombre', 'Nombre:') !!}
+    {!! Form::label('nombre', 'Nombres y Apellidos:') !!}
     <p>{{ $soporte->nombre }}</p>
 </div>
 
-<!-- Cedula Field -->
+<!-- Cedula campos-->
 <div class="form-group">
-    {!! Form::label('cedula', 'Cedula:') !!}
+    {!! Form::label('cedula', 'N° Cédula:') !!}
     <p>{{ $soporte->cedula }}</p>
 </div>
 
-<!-- Telefono Field -->
+<!-- Telefono campos-->
 <div class="form-group">
-    {!! Form::label('telefono', 'Telefono:') !!}
+    {!! Form::label('telefono', 'Teléfono:') !!}
     <p>{{ $soporte->telefono }}</p>
 </div>
 
-<!-- Encargado Field -->
+<!-- Encargado campos-->
 <div class="form-group">
     {!! Form::label('encargado', 'Encargado:') !!}
     <p>{{ $soporte->encargado }}</p>
 </div>
 
-<!-- Descripcion Field -->
+<!-- Descripción campos-->
 <div class="form-group">
-    {!! Form::label('descripcion', 'Descripcion:') !!}
+    {!! Form::label('descripcion', 'Descripción:') !!}
     <p>{{ $soporte->descripcion }}</p>
 </div>
 
-<!-- Created At Field -->
+<!-- Creados el campos-->
 <div class="form-group">
-    {!! Form::label('created_at', 'Created At:') !!}
+    {!! Form::label('created_at',Creado el:') !!}
     <p>{{ $soporte->created_at }}</p>
 </div>
 
-<!-- Updated At Field -->
+<!-- Actualizados el campos-->
 <div class="form-group">
-    {!! Form::label('updated_at', 'Updated At:') !!}
+    {!! Form::label('updated_at', 'Actualizado el:') !!}
     <p>{{ $soporte->updated_at }}</p>
 </div>
 

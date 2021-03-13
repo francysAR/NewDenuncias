@@ -3,7 +3,7 @@
 @section('content')
     <ol class="breadcrumb">
           <li class="breadcrumb-item">
-             <a href="{!! route('asignacions.index') !!}">Asignacion</a>
+             <a href="{!! route('asignacions.index') !!}">Asignación</a>
           </li>
           <li class="breadcrumb-item active">Editar</li>
         </ol>
@@ -15,7 +15,7 @@
                       <div class="card">
                           <div class="card-header">
                               <i class="fa fa-edit fa-lg"></i>
-                              <strong>Editar Asignacion</strong>
+                              <strong>Editar Asignación</strong>
                           </div>
                           <div class="card-body">
                               {!! Form::model($asignacion, ['route' => ['asignacions.update', $asignacion->id], 'method' => 'patch']) !!}

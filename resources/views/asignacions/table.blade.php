@@ -3,31 +3,31 @@
         <thead>
             <tr>
                 <th>Soporte Id</th>
-        <th>Denuncia Id</th>
-        <th>Fecha</th>
-        <th>Proceso</th>
-        <th>Observacion</th>
-                <th>Action</th>
+                <th>Denuncia Id</th>
+                <th>Fecha</th>
+                <th>Proceso</th>
+                <th>Observación</th>
+                <th>Acción</th>
             </tr>
         </thead>
         <tbody>
         @foreach($asignacions as $asignacion)
             <tr>
                 <td>{{ $asignacion->soporte->nombre }}</td>
-            <td>{{ $asignacion->denuncia->descripcion }}</td>
-            <td>{{ $asignacion->fecha }}</td>
-            <td>@switch(true)
-            @case($asignacion->proceso == 'En Proceso')
-            <span class="badge badge-primary"> {{ $asignacion->proceso }} </span>
-            @break
-            @case($asignacion->proceso == 'Terminado')
-            <span class="badge badge-success"> {{ $asignacion->proceso }} </span>
-            @break
-            @case($asignacion->proceso == 'Pendiente' )
-            <span class="badge badge-danger"> {{ $asignacion->proceso }} </span>
-            @break
-            @endswitch</td>
-            <td>{{ $asignacion->observacion }}</td>
+                <td>{{ $asignacion->denuncia->descripcion }}</td>
+                <td>{{ $asignacion->fecha }}</td>
+                <td>@switch(true)
+                    @case($asignacion->proceso == 'En Proceso')
+                    <span class="badge badge-primary"> {{ $asignacion->proceso }} </span>
+                    @break
+                    @case($asignacion->proceso == 'Terminado')
+                    <span class="badge badge-success"> {{ $asignacion->proceso }} </span>
+                    @break
+                    @case($asignacion->proceso == 'Pendiente' )
+                    <span class="badge badge-danger"> {{ $asignacion->proceso }} </span>
+                    @break
+                    @endswitch</td>
+                <td>{{ $asignacion->observacion }}</td>
                 <td>
                     {!! Form::open(['route' => ['asignacions.destroy', $asignacion->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>

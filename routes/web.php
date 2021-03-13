@@ -29,3 +29,5 @@ Route::resource('asignacions', 'AsignacionController');
 Route::get('/sinasignar/sinasignar', 'NoasignadoController@sin_asignar');
 
 Route::get('/reporte', 'ReporteController@index');
+
+Route::get('/ayuda','FontController@ayuda');
